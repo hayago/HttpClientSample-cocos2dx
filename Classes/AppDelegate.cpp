@@ -14,9 +14,9 @@ AppDelegate::~AppDelegate()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-	// Example Code
-	network::HttpRequest *request = new network::HttpRequest();
-	request->setUrl("http://www.cocos2d-x.org/");
+    // Example Code
+    network::HttpRequest *request = new network::HttpRequest();
+    request->setUrl("http://www.cocos2d-x.org/");
     request->setRequestType(network::HttpRequest::Type::GET);
     request->setResponseCallback([this](network::HttpClient *sender, network::HttpResponse *response) {
         CCLOG("ResponseCallback called.");
